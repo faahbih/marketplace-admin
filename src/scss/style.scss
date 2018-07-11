@@ -1,0 +1,49 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import styles
+@import "node_modules/@coreui/coreui/scss/coreui";
+
+// If you want to add something do it here
+@import "custom";
+
+.app-header {
+    position: relative;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 55px;
+    padding: 0;
+    margin: 0;
+    background-color: #424242;
+    border: none;
+    box-shadow: 1px 1px 4px #424242;
+}
+
+.navbar-nav .nav-link {
+    color: #f2f2f2;
+}
+
+.icon-menu{
+    color: #f2f2f2;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 0.25rem;
+    border: none;
+    box-shadow: 0px 1px 4px #424242;
+}
+
+@media (min-width: 992px){
+.sidebar-minimized .sidebar .nav-item:hover > .nav-link {
+    background: #f2a614;
+    }
+}
